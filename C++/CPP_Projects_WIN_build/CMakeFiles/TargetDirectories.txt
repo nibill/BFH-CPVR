@@ -1,0 +1,4 @@
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/ALL_BUILD.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.00_HelloWorld/CMakeFiles/CPP-01-D.00_HelloWorld.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.00_HelloWorld/CMakeFiles/ALL_BUILD.dir

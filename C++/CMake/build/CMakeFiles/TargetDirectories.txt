@@ -1,0 +1,3 @@
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CMake/build/CMakeFiles/app.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CMake/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CMake/build/CMakeFiles/ZERO_CHECK.dir
