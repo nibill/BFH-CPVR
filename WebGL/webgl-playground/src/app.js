@@ -52,6 +52,7 @@ function initScenes() {
 
 function render() {
     renderer.render(currentScene, camera);
+    
 }
 
 function onWindowResize() {
