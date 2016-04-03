@@ -30,6 +30,12 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.00_HelloWorld/cmake_install.cmake")
+  include("C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.01_MainArguments/cmake_install.cmake")
+  include("C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.02_Pointers/cmake_install.cmake")
+  include("C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.03_References/cmake_install.cmake")
+  include("C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.04_FunctionCalls/cmake_install.cmake")
+  include("C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.05_Arrays/cmake_install.cmake")
+  include("C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.06_ScopeOperator/cmake_install.cmake")
 
 endif()
 

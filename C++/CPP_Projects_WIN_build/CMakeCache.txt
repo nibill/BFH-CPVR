@@ -117,10 +117,10 @@ CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
 
 //If set, runtime paths are not added when installing shared libraries,
 // but are added when building.
-CMAKE_SKIP_INSTALL_RPATH:BOOL=NO
+CMAKE_SKIP_INSTALL_RPATH:BOOL=OFF
 
 //If set, runtime paths are not added when using shared libraries.
-CMAKE_SKIP_RPATH:BOOL=NO
+CMAKE_SKIP_RPATH:BOOL=OFF
 
 //Flags used by the linker during the creation of static libraries.
 CMAKE_STATIC_LINKER_FLAGS:STRING= /machine:x64
@@ -141,13 +141,49 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
-CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+CMAKE_VERBOSE_MAKEFILE:BOOL=OFF
 
 //Value Computed by CMake
 CPP-01-D.00_HelloWorld_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.00_HelloWorld
 
 //Value Computed by CMake
 CPP-01-D.00_HelloWorld_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.00_HelloWorld
+
+//Value Computed by CMake
+CPP-01-D.01_MainArguments_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.01_MainArguments
+
+//Value Computed by CMake
+CPP-01-D.01_MainArguments_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.01_MainArguments
+
+//Value Computed by CMake
+CPP-01-D.02_Pointers_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.02_Pointers
+
+//Value Computed by CMake
+CPP-01-D.02_Pointers_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.02_Pointers
+
+//Value Computed by CMake
+CPP-01-D.03_References_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.03_References
+
+//Value Computed by CMake
+CPP-01-D.03_References_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.03_References
+
+//Value Computed by CMake
+CPP-01-D.04_FunctionCalls_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.04_FunctionCalls
+
+//Value Computed by CMake
+CPP-01-D.04_FunctionCalls_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.04_FunctionCalls
+
+//Value Computed by CMake
+CPP-01-D.05_Arrays_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.05_Arrays
+
+//Value Computed by CMake
+CPP-01-D.05_Arrays_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.05_Arrays
+
+//Value Computed by CMake
+CPP-01-D.06_ScopeOperator_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.06_ScopeOperator
+
+//Value Computed by CMake
+CPP-01-D.06_ScopeOperator_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.06_ScopeOperator
 
 //Value Computed by CMake
 CPP-PROJECTS_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build
@@ -240,7 +276,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_RC_COMPILER
 CMAKE_RC_COMPILER-ADVANCED:INTERNAL=1
 CMAKE_RC_COMPILER_WORKS:INTERNAL=1

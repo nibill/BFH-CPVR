@@ -1,0 +1,10 @@
+﻿  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"CPP-01-D.06_ScopeOperator.dir\Debug\\" /Fd"CPP-01-D.06_ScopeOperator.dir\Debug\vc140.pdb" /Gd /TP /errorReport:prompt "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.06_ScopeOperator\src\ScopeOperator.cpp"
+  
+  ScopeOperator.cpp
+C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.06_ScopeOperator\src\ScopeOperator.cpp(18): error C2374: 'n': redefinition; multiple initialization
+  C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.06_ScopeOperator\src\ScopeOperator.cpp(14): note: see declaration of 'n'
+C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.06_ScopeOperator\src\ScopeOperator.cpp(19): error C2088: '<<': illegal for class
+C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.06_ScopeOperator\src\ScopeOperator.cpp(22): error C2088: '<<': illegal for class

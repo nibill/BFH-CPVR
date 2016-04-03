@@ -2,3 +2,15 @@ C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/ALL_
 C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/ZERO_CHECK.dir
 C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.00_HelloWorld/CMakeFiles/CPP-01-D.00_HelloWorld.dir
 C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.00_HelloWorld/CMakeFiles/ALL_BUILD.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.01_MainArguments/CMakeFiles/CPP-01-D.01_MainArguments.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.01_MainArguments/CMakeFiles/ALL_BUILD.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.02_Pointers/CMakeFiles/CPP-01-D.02_Pointers.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.02_Pointers/CMakeFiles/ALL_BUILD.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.03_References/CMakeFiles/CPP-01-D.03_References.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.03_References/CMakeFiles/ALL_BUILD.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.04_FunctionCalls/CMakeFiles/CPP-01-D.04_FunctionCalls.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.04_FunctionCalls/CMakeFiles/ALL_BUILD.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.05_Arrays/CMakeFiles/CPP-01-D.05_Arrays.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.05_Arrays/CMakeFiles/ALL_BUILD.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.06_ScopeOperator/CMakeFiles/CPP-01-D.06_ScopeOperator.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.06_ScopeOperator/CMakeFiles/ALL_BUILD.dir
