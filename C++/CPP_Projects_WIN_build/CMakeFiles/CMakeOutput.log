@@ -1,4 +1,4 @@
-The system is: Windows - 10.0.10240 - AMD64
+The system is: Windows - 10.0.10586 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler:  
 Build flags: 
@@ -9,7 +9,7 @@ The output was:
 Microsoft (R) Build Engine version 14.0.24730.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 18.03.2016 11:22:42.
+Build started 11.04.2016 18:24:00.
 The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
 Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\3.5.0\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
@@ -36,7 +36,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.42
+Time Elapsed 00:00:00.73
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -55,7 +55,7 @@ The output was:
 Microsoft (R) Build Engine version 14.0.24730.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 18.03.2016 11:22:43.
+Build started 11.04.2016 18:24:01.
 The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
 Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\3.5.0\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
 PrepareForBuild:
@@ -82,7 +82,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.40
+Time Elapsed 00:00:00.66
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -94,161 +94,161 @@ The CXX compiler identification is MSVC, found in "C:/Users/buche/Documents/Git/
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_d3777.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_44721.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.24730.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 18.03.2016 11:22:45.
+Build started 11.04.2016 18:24:02.
 The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
-Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_d3777.vcxproj" on node 1 (default targets).
+Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_44721.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_d3777.dir\Debug\".
+  Creating directory "cmTC_44721.dir\Debug\".
   Creating directory "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_d3777.dir\Debug\cmTC_d3777.tlog\".
+  Creating directory "cmTC_44721.dir\Debug\cmTC_44721.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_d3777.dir\Debug\cmTC_d3777.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_44721.dir\Debug\cmTC_44721.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d3777.dir\Debug\\" /Fd"cmTC_d3777.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_44721.dir\Debug\\" /Fd"cmTC_44721.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\testCCompiler.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d3777.dir\Debug\\" /Fd"cmTC_d3777.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\testCCompiler.c"
-  testCCompiler.c
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_44721.dir\Debug\\" /Fd"cmTC_44721.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\testCCompiler.c"
   
+  testCCompiler.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_d3777.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_d3777.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_d3777.lib" /MACHINE:X64  /machine:x64 cmTC_d3777.dir\Debug\testCCompiler.obj
-  cmTC_d3777.vcxproj -> C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_d3777.exe
-  cmTC_d3777.vcxproj -> C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_d3777.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_44721.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_44721.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_44721.lib" /MACHINE:X64  /machine:x64 cmTC_44721.dir\Debug\testCCompiler.obj
+  cmTC_44721.vcxproj -> C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_44721.exe
+  cmTC_44721.vcxproj -> C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_44721.pdb (Full PDB)
 FinalizeBuildStatus:
-  Deleting file "cmTC_d3777.dir\Debug\cmTC_d3777.tlog\unsuccessfulbuild".
-  Touching "cmTC_d3777.dir\Debug\cmTC_d3777.tlog\cmTC_d3777.lastbuildstate".
-Done Building Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_d3777.vcxproj" (default targets).
+  Deleting file "cmTC_44721.dir\Debug\cmTC_44721.tlog\unsuccessfulbuild".
+  Touching "cmTC_44721.dir\Debug\cmTC_44721.tlog\cmTC_44721.lastbuildstate".
+Done Building Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_44721.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.21
+Time Elapsed 00:00:00.75
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_17f14.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_d57c0.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.24730.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 18.03.2016 11:22:47.
+Build started 11.04.2016 18:24:02.
 The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
-Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_17f14.vcxproj" on node 1 (default targets).
+Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_d57c0.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_17f14.dir\Debug\".
+  Creating directory "cmTC_d57c0.dir\Debug\".
   Creating directory "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_17f14.dir\Debug\cmTC_17f14.tlog\".
+  Creating directory "cmTC_d57c0.dir\Debug\cmTC_d57c0.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_17f14.dir\Debug\cmTC_17f14.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_d57c0.dir\Debug\cmTC_d57c0.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_17f14.dir\Debug\\" /Fd"cmTC_17f14.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d57c0.dir\Debug\\" /Fd"cmTC_d57c0.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_17f14.dir\Debug\\" /Fd"cmTC_17f14.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
-  CMakeCCompilerABI.c
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d57c0.dir\Debug\\" /Fd"cmTC_d57c0.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCCompilerABI.c"
   
+  CMakeCCompilerABI.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_17f14.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_17f14.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_17f14.lib" /MACHINE:X64  /machine:x64 cmTC_17f14.dir\Debug\CMakeCCompilerABI.obj
-  cmTC_17f14.vcxproj -> C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_17f14.exe
-  cmTC_17f14.vcxproj -> C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_17f14.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_d57c0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_d57c0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_d57c0.lib" /MACHINE:X64  /machine:x64 cmTC_d57c0.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_d57c0.vcxproj -> C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_d57c0.exe
+  cmTC_d57c0.vcxproj -> C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_d57c0.pdb (Full PDB)
 FinalizeBuildStatus:
-  Deleting file "cmTC_17f14.dir\Debug\cmTC_17f14.tlog\unsuccessfulbuild".
-  Touching "cmTC_17f14.dir\Debug\cmTC_17f14.tlog\cmTC_17f14.lastbuildstate".
-Done Building Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_17f14.vcxproj" (default targets).
+  Deleting file "cmTC_d57c0.dir\Debug\cmTC_d57c0.tlog\unsuccessfulbuild".
+  Touching "cmTC_d57c0.dir\Debug\cmTC_d57c0.tlog\cmTC_d57c0.lastbuildstate".
+Done Building Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_d57c0.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.20
+Time Elapsed 00:00:00.81
 
 
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_aefd6.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_53e50.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.24730.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 18.03.2016 11:22:48.
+Build started 11.04.2016 18:24:04.
 The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
-Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_aefd6.vcxproj" on node 1 (default targets).
+Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_53e50.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_aefd6.dir\Debug\".
+  Creating directory "cmTC_53e50.dir\Debug\".
   Creating directory "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_aefd6.dir\Debug\cmTC_aefd6.tlog\".
+  Creating directory "cmTC_53e50.dir\Debug\cmTC_53e50.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_aefd6.dir\Debug\cmTC_aefd6.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_53e50.dir\Debug\cmTC_53e50.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_aefd6.dir\Debug\\" /Fd"cmTC_aefd6.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_53e50.dir\Debug\\" /Fd"cmTC_53e50.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_aefd6.dir\Debug\\" /Fd"cmTC_aefd6.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
-  testCXXCompiler.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_53e50.dir\Debug\\" /Fd"cmTC_53e50.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
   
+  testCXXCompiler.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_aefd6.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_aefd6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_aefd6.lib" /MACHINE:X64  /machine:x64 cmTC_aefd6.dir\Debug\testCXXCompiler.obj
-  cmTC_aefd6.vcxproj -> C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_aefd6.exe
-  cmTC_aefd6.vcxproj -> C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_aefd6.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_53e50.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_53e50.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_53e50.lib" /MACHINE:X64  /machine:x64 cmTC_53e50.dir\Debug\testCXXCompiler.obj
+  cmTC_53e50.vcxproj -> C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_53e50.exe
+  cmTC_53e50.vcxproj -> C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_53e50.pdb (Full PDB)
 FinalizeBuildStatus:
-  Deleting file "cmTC_aefd6.dir\Debug\cmTC_aefd6.tlog\unsuccessfulbuild".
-  Touching "cmTC_aefd6.dir\Debug\cmTC_aefd6.tlog\cmTC_aefd6.lastbuildstate".
-Done Building Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_aefd6.vcxproj" (default targets).
+  Deleting file "cmTC_53e50.dir\Debug\cmTC_53e50.tlog\unsuccessfulbuild".
+  Touching "cmTC_53e50.dir\Debug\cmTC_53e50.tlog\cmTC_53e50.lastbuildstate".
+Done Building Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_53e50.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.21
+Time Elapsed 00:00:00.79
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_08b92.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_2221a.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.24730.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 18.03.2016 11:22:50.
+Build started 11.04.2016 18:24:04.
 The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
-Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_08b92.vcxproj" on node 1 (default targets).
+Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_2221a.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_08b92.dir\Debug\".
+  Creating directory "cmTC_2221a.dir\Debug\".
   Creating directory "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_08b92.dir\Debug\cmTC_08b92.tlog\".
+  Creating directory "cmTC_2221a.dir\Debug\cmTC_2221a.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_08b92.dir\Debug\cmTC_08b92.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_2221a.dir\Debug\cmTC_2221a.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_08b92.dir\Debug\\" /Fd"cmTC_08b92.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2221a.dir\Debug\\" /Fd"cmTC_2221a.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_08b92.dir\Debug\\" /Fd"cmTC_08b92.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
-  CMakeCXXCompilerABI.cpp
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2221a.dir\Debug\\" /Fd"cmTC_2221a.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.5\Modules\CMakeCXXCompilerABI.cpp"
   
+  CMakeCXXCompilerABI.cpp
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_08b92.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_08b92.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_08b92.lib" /MACHINE:X64  /machine:x64 cmTC_08b92.dir\Debug\CMakeCXXCompilerABI.obj
-  cmTC_08b92.vcxproj -> C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_08b92.exe
-  cmTC_08b92.vcxproj -> C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_08b92.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_2221a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_2221a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_2221a.lib" /MACHINE:X64  /machine:x64 cmTC_2221a.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_2221a.vcxproj -> C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_2221a.exe
+  cmTC_2221a.vcxproj -> C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_2221a.pdb (Full PDB)
 FinalizeBuildStatus:
-  Deleting file "cmTC_08b92.dir\Debug\cmTC_08b92.tlog\unsuccessfulbuild".
-  Touching "cmTC_08b92.dir\Debug\cmTC_08b92.tlog\cmTC_08b92.lastbuildstate".
-Done Building Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_08b92.vcxproj" (default targets).
+  Deleting file "cmTC_2221a.dir\Debug\cmTC_2221a.tlog\unsuccessfulbuild".
+  Touching "cmTC_2221a.dir\Debug\cmTC_2221a.tlog\cmTC_2221a.lastbuildstate".
+Done Building Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_2221a.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.20
+Time Elapsed 00:00:00.77
 
 
 
@@ -256,41 +256,41 @@ Time Elapsed 00:00:01.20
 Detecting CXX [] compiler features compiled with the following output:
 Change Dir: C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_260a6.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_73b95.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.24730.2
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 18.03.2016 11:22:52.
+Build started 11.04.2016 18:24:06.
 The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
-Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_260a6.vcxproj" on node 1 (default targets).
+Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_73b95.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_260a6.dir\Debug\".
+  Creating directory "cmTC_73b95.dir\Debug\".
   Creating directory "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_260a6.dir\Debug\cmTC_260a6.tlog\".
+  Creating directory "cmTC_73b95.dir\Debug\cmTC_73b95.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_260a6.dir\Debug\cmTC_260a6.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_73b95.dir\Debug\cmTC_73b95.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_260a6.dir\Debug\\" /Fd"cmTC_260a6.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\feature_tests.cxx"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_73b95.dir\Debug\\" /Fd"cmTC_73b95.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\feature_tests.cxx"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_260a6.dir\Debug\\" /Fd"cmTC_260a6.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\feature_tests.cxx"
-  feature_tests.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_73b95.dir\Debug\\" /Fd"cmTC_73b95.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\feature_tests.cxx"
   
+  feature_tests.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_260a6.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_260a6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_260a6.lib" /MACHINE:X64  /machine:x64 cmTC_260a6.dir\Debug\feature_tests.obj
-  cmTC_260a6.vcxproj -> C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_260a6.exe
-  cmTC_260a6.vcxproj -> C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_260a6.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_73b95.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_73b95.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_73b95.lib" /MACHINE:X64  /machine:x64 cmTC_73b95.dir\Debug\feature_tests.obj
+  cmTC_73b95.vcxproj -> C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\Debug\cmTC_73b95.exe
+  cmTC_73b95.vcxproj -> C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/CMakeTmp/Debug/cmTC_73b95.pdb (Full PDB)
 FinalizeBuildStatus:
-  Deleting file "cmTC_260a6.dir\Debug\cmTC_260a6.tlog\unsuccessfulbuild".
-  Touching "cmTC_260a6.dir\Debug\cmTC_260a6.tlog\cmTC_260a6.lastbuildstate".
-Done Building Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_260a6.vcxproj" (default targets).
+  Deleting file "cmTC_73b95.dir\Debug\cmTC_73b95.tlog\unsuccessfulbuild".
+  Touching "cmTC_73b95.dir\Debug\cmTC_73b95.tlog\cmTC_73b95.lastbuildstate".
+Done Building Project "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN_build\CMakeFiles\CMakeTmp\cmTC_73b95.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.28
+Time Elapsed 00:00:00.85
 
 
     Feature record: CXX_FEATURE:1cxx_alias_templates

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.04_FunctionCalls\src\FunctionCall.cpp">
+    <ClCompile Include="C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.04_FunctionCalls\src\FunctionCall.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

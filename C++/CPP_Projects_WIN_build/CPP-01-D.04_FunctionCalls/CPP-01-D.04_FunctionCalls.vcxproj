@@ -12,7 +12,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGUID>{5F5C8D9A-E5BD-3240-889E-C2871195D879}</ProjectGUID>
-    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>CPP-01-D.04_FunctionCalls</ProjectName>
@@ -39,13 +39,13 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.04_FunctionCalls\bin\Debug\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.04_FunctionCalls\bin\Debug\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CPP-01-D.04_FunctionCalls.dir\Debug\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CPP-01-D.04_FunctionCalls</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.04_FunctionCalls\bin\Release\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.04_FunctionCalls\bin\Release\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CPP-01-D.04_FunctionCalls.dir\Release\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CPP-01-D.04_FunctionCalls</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
@@ -88,8 +88,8 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.04_FunctionCalls/bin/Debug/CPP-01-D.04_FunctionCalls.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.04_FunctionCalls/bin/Debug/CPP-01-D.04_FunctionCalls.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.04_FunctionCalls/bin/Debug/CPP-01-D.04_FunctionCalls.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.04_FunctionCalls/bin/Debug/CPP-01-D.04_FunctionCalls.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -132,8 +132,8 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.04_FunctionCalls/bin/Release/CPP-01-D.04_FunctionCalls.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.04_FunctionCalls/bin/Release/CPP-01-D.04_FunctionCalls.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.04_FunctionCalls/bin/Release/CPP-01-D.04_FunctionCalls.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.04_FunctionCalls/bin/Release/CPP-01-D.04_FunctionCalls.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -142,7 +142,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.04_FunctionCalls\src\FunctionCall.cpp"  />
+    <ClCompile Include="C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.04_FunctionCalls\src\FunctionCall.cpp"  />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/ZERO_CHECK.vcxproj">

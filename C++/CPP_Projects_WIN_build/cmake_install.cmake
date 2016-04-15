@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN
+# Install script for directory: C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -36,6 +36,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.04_FunctionCalls/cmake_install.cmake")
   include("C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.05_Arrays/cmake_install.cmake")
   include("C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.06_ScopeOperator/cmake_install.cmake")
+  include("C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-A.01S_GLDraw2D/cmake_install.cmake")
 
 endif()
 

@@ -1,5 +1,5 @@
 # CMake generation dependency list for this directory.
-C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CMakeLists.txt
+C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CMakeLists.txt
 C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/3.5.0/CMakeSystem.cmake
 C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeSystemSpecificInitialize.cmake
 C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CMakeFiles/3.5.0/CMakeCCompiler.cmake
@@ -21,5 +21,5 @@ C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Compiler/MSVC-CXX.cmake
 C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Platform/Windows-MSVC-CXX.cmake
 C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/Platform/Windows-MSVC.cmake
 C:/Program Files (x86)/CMake/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake
-C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/_CMAKE/MACRO_ENSURE_OUT_OF_SOURCE_BUILD.cmake
-C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/_CMAKE/MACRO_GET_DIRECTORIES.cmake
+C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_CMAKE/MACRO_ENSURE_OUT_OF_SOURCE_BUILD.cmake
+C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_CMAKE/MACRO_GET_DIRECTORIES.cmake

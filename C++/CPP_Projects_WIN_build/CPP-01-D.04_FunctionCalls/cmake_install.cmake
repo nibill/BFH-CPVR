@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.04_FunctionCalls
+# Install script for directory: C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.04_FunctionCalls
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

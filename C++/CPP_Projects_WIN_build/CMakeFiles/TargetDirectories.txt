@@ -14,3 +14,5 @@ C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.05_Arr
 C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.05_Arrays/CMakeFiles/ALL_BUILD.dir
 C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.06_ScopeOperator/CMakeFiles/CPP-01-D.06_ScopeOperator.dir
 C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.06_ScopeOperator/CMakeFiles/ALL_BUILD.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-A.01S_GLDraw2D/CMakeFiles/CPP-A.01S_GLDraw2D.dir
+C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-A.01S_GLDraw2D/CMakeFiles/ALL_BUILD.dir

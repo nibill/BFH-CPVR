@@ -1,8 +1,8 @@
 ﻿  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"CPP-01-D.03_References.dir\Debug\\" /Fd"CPP-01-D.03_References.dir\Debug\vc140.pdb" /Gd /TP /errorReport:prompt "C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.03_References\src\References.cpp"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"CPP-01-D.03_References.dir\Debug\\" /Fd"CPP-01-D.03_References.dir\Debug\vc140.pdb" /Gd /TP /errorReport:prompt "C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.03_References\src\References.cpp"
   
   References.cpp
-  CPP-01-D.03_References.vcxproj -> C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.03_References\bin\Debug\CPP-01-D.03_References.exe
-  CPP-01-D.03_References.vcxproj -> C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.03_References/bin/Debug/CPP-01-D.03_References.pdb (Full PDB)
+  CPP-01-D.03_References.vcxproj -> C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.03_References\bin\Debug\CPP-01-D.03_References.exe
+  CPP-01-D.03_References.vcxproj -> C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.03_References/bin/Debug/CPP-01-D.03_References.pdb (Full PDB)

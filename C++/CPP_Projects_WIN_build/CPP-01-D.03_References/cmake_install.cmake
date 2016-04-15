@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.03_References
+# Install script for directory: C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.03_References
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

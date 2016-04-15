@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.05_Arrays
+# Install script for directory: C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.05_Arrays
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

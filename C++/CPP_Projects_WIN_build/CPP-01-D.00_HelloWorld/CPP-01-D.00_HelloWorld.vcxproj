@@ -12,7 +12,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGUID>{65C7608C-4A2B-30C5-89B9-5E273962D1D8}</ProjectGUID>
-    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>CPP-01-D.00_HelloWorld</ProjectName>
@@ -39,13 +39,13 @@
   <PropertyGroup Label="UserMacros" />
     <PropertyGroup>
       <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.00_HelloWorld\bin\Debug\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.00_HelloWorld\bin\Debug\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CPP-01-D.00_HelloWorld.dir\Debug\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CPP-01-D.00_HelloWorld</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
       <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
       <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.00_HelloWorld\bin\Release\</OutDir>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.00_HelloWorld\bin\Release\</OutDir>
       <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CPP-01-D.00_HelloWorld.dir\Release\</IntDir>
       <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CPP-01-D.00_HelloWorld</TargetName>
       <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
@@ -88,8 +88,8 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.00_HelloWorld/bin/Debug/CPP-01-D.00_HelloWorld.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.00_HelloWorld/bin/Debug/CPP-01-D.00_HelloWorld.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.00_HelloWorld/bin/Debug/CPP-01-D.00_HelloWorld.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.00_HelloWorld/bin/Debug/CPP-01-D.00_HelloWorld.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -132,8 +132,8 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.00_HelloWorld/bin/Release/CPP-01-D.00_HelloWorld.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.00_HelloWorld/bin/Release/CPP-01-D.00_HelloWorld.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.00_HelloWorld/bin/Release/CPP-01-D.00_HelloWorld.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.00_HelloWorld/bin/Release/CPP-01-D.00_HelloWorld.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version></Version>
     </Link>
@@ -142,7 +142,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\buche\Documents\Git\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.00_HelloWorld\src\HelloWorld.cpp"  />
+    <ClCompile Include="C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-01-D.00_HelloWorld\src\HelloWorld.cpp"  />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/ZERO_CHECK.vcxproj">

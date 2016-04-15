@@ -147,49 +147,88 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=OFF
 CPP-01-D.00_HelloWorld_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.00_HelloWorld
 
 //Value Computed by CMake
-CPP-01-D.00_HelloWorld_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.00_HelloWorld
+CPP-01-D.00_HelloWorld_SOURCE_DIR:STATIC=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.00_HelloWorld
 
 //Value Computed by CMake
 CPP-01-D.01_MainArguments_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.01_MainArguments
 
 //Value Computed by CMake
-CPP-01-D.01_MainArguments_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.01_MainArguments
+CPP-01-D.01_MainArguments_SOURCE_DIR:STATIC=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.01_MainArguments
 
 //Value Computed by CMake
 CPP-01-D.02_Pointers_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.02_Pointers
 
 //Value Computed by CMake
-CPP-01-D.02_Pointers_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.02_Pointers
+CPP-01-D.02_Pointers_SOURCE_DIR:STATIC=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.02_Pointers
 
 //Value Computed by CMake
 CPP-01-D.03_References_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.03_References
 
 //Value Computed by CMake
-CPP-01-D.03_References_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.03_References
+CPP-01-D.03_References_SOURCE_DIR:STATIC=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.03_References
 
 //Value Computed by CMake
 CPP-01-D.04_FunctionCalls_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.04_FunctionCalls
 
 //Value Computed by CMake
-CPP-01-D.04_FunctionCalls_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.04_FunctionCalls
+CPP-01-D.04_FunctionCalls_SOURCE_DIR:STATIC=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.04_FunctionCalls
 
 //Value Computed by CMake
 CPP-01-D.05_Arrays_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.05_Arrays
 
 //Value Computed by CMake
-CPP-01-D.05_Arrays_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.05_Arrays
+CPP-01-D.05_Arrays_SOURCE_DIR:STATIC=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.05_Arrays
 
 //Value Computed by CMake
 CPP-01-D.06_ScopeOperator_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-01-D.06_ScopeOperator
 
 //Value Computed by CMake
-CPP-01-D.06_ScopeOperator_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.06_ScopeOperator
+CPP-01-D.06_ScopeOperator_SOURCE_DIR:STATIC=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.06_ScopeOperator
+
+//Value Computed by CMake
+CPP-A.01S_GLDraw2D_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/CPP-A.01S_GLDraw2D
+
+//Value Computed by CMake
+CPP-A.01S_GLDraw2D_SOURCE_DIR:STATIC=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-A.01S_GLDraw2D
 
 //Value Computed by CMake
 CPP-PROJECTS_BINARY_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build
 
 //Value Computed by CMake
-CPP-PROJECTS_SOURCE_DIR:STATIC=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN
+CPP-PROJECTS_SOURCE_DIR:STATIC=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN
+
+//Path to a library.
+FLTK_GL_LIBRARY:FILEPATH=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/FLTK/lib/x64/Release/fltk_gl.lib
+
+//Path to a library.
+FLTK_GL_LIBRARY_DEBUG:FILEPATH=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/FLTK/lib/x64/Debug/fltk_gld.lib
+
+//Path to a file.
+FLTK_INCLUDE_DIR:PATH=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/FLTK/include
+
+//Path to a library.
+FLTK_LIBRARY:FILEPATH=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/FLTK/lib/x64/Release/fltk.lib
+
+//Path to a library.
+FLTK_LIBRARY_DEBUG:FILEPATH=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/FLTK/lib/x64/Debug/fltkd.lib
+
+//Path to a file.
+GLEW_INCLUDE_DIR:PATH=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/GLEW/include
+
+//Path to a library.
+GLEW_LIBRARY:FILEPATH=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/GLEW/lib/x64/Release/libglew32.lib
+
+//Path to a library.
+GLEW_LIBRARY_DEBUG:FILEPATH=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/GLEW/lib/x64/Debug/libglew32d.lib
+
+//Path to a file.
+GLM_INCLUDE_DIR:PATH=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/GLM/include
+
+//OpenGL library for win32
+OPENGL_gl_LIBRARY:STRING=opengl32
+
+//GLU library for win32
+OPENGL_glu_LIBRARY:STRING=glu32
 
 //SystemName
 VC_USER_SYSTEM_NAME:STRING=DESKTOP-N3QAV3T
@@ -262,7 +301,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN
+CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -276,7 +315,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_RC_COMPILER
 CMAKE_RC_COMPILER-ADVANCED:INTERNAL=1
 CMAKE_RC_COMPILER_WORKS:INTERNAL=1
@@ -310,4 +349,16 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding FLTK
+FIND_PACKAGE_MESSAGE_DETAILS_FLTK:INTERNAL=[C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/FLTK/lib/x64/Release/fltk.lib][C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/FLTK/lib/x64/Debug/fltkd.lib][C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/FLTK/include][v()]
+//Details about finding GLEW
+FIND_PACKAGE_MESSAGE_DETAILS_GLEW:INTERNAL=[C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/GLEW/lib/x64/Release/libglew32.lib][C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/GLEW/lib/x64/Debug/libglew32d.lib][C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/GLEW/include][v()]
+//Details about finding GLM
+FIND_PACKAGE_MESSAGE_DETAILS_GLM:INTERNAL=[C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/_LIBS/GLM/include][v()]
+//Details about finding OpenGL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][v()]
+//ADVANCED property for variable: OPENGL_gl_LIBRARY
+OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_glu_LIBRARY
+OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
 

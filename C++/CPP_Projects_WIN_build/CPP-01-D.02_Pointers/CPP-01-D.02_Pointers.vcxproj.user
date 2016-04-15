@@ -4,28 +4,28 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LocalDebuggerEnvironment></LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-	<LocalDebuggerWorkingDirectory>C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.02_Pointers/bin/Debug</LocalDebuggerWorkingDirectory>
+	<LocalDebuggerWorkingDirectory>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.02_Pointers/bin/Debug</LocalDebuggerWorkingDirectory>
 	<LocalDebuggerCommandArguments></LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LocalDebuggerEnvironment></LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-	<LocalDebuggerWorkingDirectory>C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.02_Pointers/bin/Debug</LocalDebuggerWorkingDirectory>
+	<LocalDebuggerWorkingDirectory>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.02_Pointers/bin/Debug</LocalDebuggerWorkingDirectory>
 	<LocalDebuggerCommandArguments></LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LocalDebuggerEnvironment></LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-	<LocalDebuggerWorkingDirectory>C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.02_Pointers/bin/Release</LocalDebuggerWorkingDirectory>
+	<LocalDebuggerWorkingDirectory>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.02_Pointers/bin/Release</LocalDebuggerWorkingDirectory>
 	<LocalDebuggerCommandArguments></LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LocalDebuggerEnvironment></LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-	<LocalDebuggerWorkingDirectory>C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.02_Pointers/bin/Release</LocalDebuggerWorkingDirectory>
+	<LocalDebuggerWorkingDirectory>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-01-D.02_Pointers/bin/Release</LocalDebuggerWorkingDirectory>
 	<LocalDebuggerCommandArguments></LocalDebuggerCommandArguments>
   </PropertyGroup>
 </Project>
