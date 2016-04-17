@@ -23,7 +23,7 @@ function init() {
     document.body.appendChild(renderer.domElement);
 
     orbitControls = new OrbitControls(camera, renderer.domElement);
-    orbitControls.autoRotate = true;
+    orbitControls.autoRotate = false;
     orbitControls.enableZoom = true;
 
     window.addEventListener('resize', onWindowResize, false);
