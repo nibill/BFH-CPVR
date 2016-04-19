@@ -14,7 +14,7 @@ let renderer = new THREE.WebGLRenderer();
 renderer.setSize(width, height);
 
 let geometry = new THREE.BoxGeometry(1, 1, 1);
-let material = new THREE.MeshPhongMaterial({ambient: 0x555555, color: 0x555555,
+let material = new THREE.MeshPhongMaterial({color: 0x555555,
   specular: 0xffffff, shininess: 50, shading: THREE.SmoothShading});
 let cube = new THREE.Mesh(geometry, material);
 scene.add(cube);

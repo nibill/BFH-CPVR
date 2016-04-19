@@ -20,6 +20,8 @@ function init() {
     renderer = new THREE.WebGLRenderer();
     renderer.setClearColor(0x00000000);
     renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.soft = true;
     document.body.appendChild(renderer.domElement);
 
     orbitControls = new OrbitControls(camera, renderer.domElement);
@@ -52,7 +54,6 @@ function initScenes() {
 
 function render() {
     renderer.render(currentScene, camera);
-    
 }
 
 function onWindowResize() {

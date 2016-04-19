@@ -12,27 +12,35 @@ plane.rotation.set(Math.PI / 2, 0, 0);
 plane.receiveShadow = true;
 scene.add(plane);
 
-let geometry = new THREE.BoxGeometry(5, 5, 5);
-let material = new THREE.MeshPhongMaterial({ambient: 0x555555, color: 0x555555,
+let geometry = new THREE.BoxGeometry(2, 2, 2);
+let material = new THREE.MeshPhongMaterial({color: 0x555555,
   specular: 0xffffff, shininess: 70, shading: THREE.SmoothShading});
 let cube = new THREE.Mesh(geometry, material);
-cube.position.y = 2.6
+cube.position.y = 1;
+cube.position.x = 1.1;
+cube.castShadow = true;
 scene.add(cube);
 
-scene.add(new THREE.AmbientLight(0xff0040));
+let cube1 = new THREE.Mesh(geometry, material);
+cube1.position.y = 1;
+cube1.position.x = -1.1;
+cube1.castShadow = true;
+scene.add(cube1);
+
+let cube2 = new THREE.Mesh(geometry, material);
+cube2.position.y = 3.1;
+cube2.position.x = 0.1;
+cube2.castShadow = true;
+scene.add(cube2);
+
+//scene.add(new THREE.AmbientLight(0xff0040));
+scene.add(new THREE.AmbientLight(0x111111));
 
 let spotLight = new THREE.SpotLight(0xffffff, 6, 40, Math.PI/10);
 //spotLight.target.position.set(.5, .5, .5);
 spotLight.position.set(20,  5, 20);
-//spotlight.castShadow = true;
+spotLight.castShadow = true;
 scene.add(spotLight);
-
-// let spotLight = new THREE.SpotLight(0xdddddd, 3, 20, .2);
-// spotLight.target.position.set(.5, .5, .5);
-// spotLight.position.set(-5, 5, 5);
-// spotLight.castShadow = true;
-// scene.add(spotLight);
-
 
 let spotlighthelper = new THREE.SpotLightHelper(spotLight);
 scene.add(spotlighthelper);
