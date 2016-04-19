@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
@@ -37,21 +37,21 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-    <PropertyGroup>
-      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-A.01S_GLDraw2D\bin\Debug\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CPP-A.01S_GLDraw2D.dir\Debug\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CPP-A.01S_GLDraw2D</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-A.01S_GLDraw2D\bin\Release\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CPP-A.01S_GLDraw2D.dir\Release\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CPP-A.01S_GLDraw2D</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
-      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
-      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-A.01S_GLDraw2D\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CPP-A.01S_GLDraw2D.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CPP-A.01S_GLDraw2D</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-A.01S_GLDraw2D\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CPP-A.01S_GLDraw2D.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CPP-A.01S_GLDraw2D</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\_LIBS\FLTK\include;C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\_LIBS\GLEW\include;C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\_LIBS\GLM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -65,7 +65,8 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SuppressStartupBanner></SuppressStartupBanner>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;GLEW_STATIC;GLM_FORCE_RADIANS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -91,7 +92,8 @@
       <ImportLibrary>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-A.01S_GLDraw2D/bin/Debug/CPP-A.01S_GLDraw2D.lib</ImportLibrary>
       <ProgramDataBaseFile>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-A.01S_GLDraw2D/bin/Debug/CPP-A.01S_GLDraw2D.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -108,11 +110,13 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SuppressStartupBanner></SuppressStartupBanner>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GLEW_STATIC;GLM_FORCE_RADIANS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GLEW_STATIC;GLM_FORCE_RADIANS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -135,16 +139,25 @@
       <ImportLibrary>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-A.01S_GLDraw2D/bin/Release/CPP-A.01S_GLDraw2D.lib</ImportLibrary>
       <ProgramDataBaseFile>C:/Users/buche/Documents/BFH-CPVR/C++/CPP_Projects_WIN/CPP-A.01S_GLDraw2D/bin/Release/CPP-A.01S_GLDraw2D.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
-      <Version></Version>
+      <Version>
+      </Version>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CCircle.cpp" />
+    <ClCompile Include="CLine.cpp" />
+    <ClCompile Include="CPoint.cpp" />
+    <ClCompile Include="CRect.cpp" />
     <ClInclude Include="C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-A.01S_GLDraw2D\inc\Geom.h" />
-    <ClCompile Include="C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-A.01S_GLDraw2D\src\Draw.cpp"  />
-    <ClCompile Include="C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-A.01S_GLDraw2D\src\Geom.cpp"  />
+    <ClCompile Include="C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-A.01S_GLDraw2D\src\Draw.cpp" />
+    <ClCompile Include="C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-A.01S_GLDraw2D\src\Geom.cpp" />
+    <ClInclude Include="CCircle.h" />
+    <ClInclude Include="CLine.h" />
+    <ClInclude Include="CPoint.h" />
+    <ClInclude Include="CRect.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:/Users/buche/Documents/Git/BFH-CPVR/C++/CPP_Projects_WIN_build/ZERO_CHECK.vcxproj">
