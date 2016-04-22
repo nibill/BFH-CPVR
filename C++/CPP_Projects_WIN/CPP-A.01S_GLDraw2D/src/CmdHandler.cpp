@@ -13,6 +13,7 @@ history: 1.00 - initial version of OpenGL drawing application
 // system includes ////////////////////////////////////////////////////////////
 #include <iostream>
 #include <string>
+#include "../inc/CPoint.h"
 using namespace std;
 
 

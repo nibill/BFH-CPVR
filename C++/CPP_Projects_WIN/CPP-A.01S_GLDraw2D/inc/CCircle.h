@@ -15,6 +15,8 @@ public:
 	CCircle(CPoint cent, float rad);
 	CCircle(float x, float y, float r);
 	CCircle(const CCircle& circle);
+	CCircle operator+(CCircle circ);
+
 	~CCircle();
 
 	void set(CPoint cent, float rad);

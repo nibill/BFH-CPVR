@@ -1,16 +1,13 @@
 #include <string>
-#include "../inc/CRectangle.h"
 #include <algorithm>
-
-
 #include <math.h>
 #include <iostream>
 
-#include <GL/glew.h>
-#include <FL/glut.H>
-
+#include "../inc/CRectangle.h"
 #include "../inc/Drawing.h"
 
+#include <GL/glew.h>
+//#include <FL/glut.H>
 
 using namespace std;
 
@@ -91,6 +88,12 @@ int CRectangle::list()
 {
 	return ulCount;
 }
+
+void CRectangle::draw()
+{
+	glRectf(tLeft.x, tLeft.y, bRight.x, bRight.y);
+}
+
 
 unsigned long CRectangle::listCount()
 {

@@ -34,6 +34,16 @@ CPoint::CPoint(const CPoint & point):
 	ulCount++;
 }
 
+CPoint CPoint::operator+(CPoint point)
+{
+	return CPoint(x + point.x, y + point.y);
+}
+
+CPoint CPoint::operator-(CPoint point)
+{
+	return CPoint(x - point.x, y - point.y);
+}
+
 CPoint::~CPoint()
 {
 	ulCount--;

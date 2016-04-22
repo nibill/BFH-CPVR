@@ -10,6 +10,7 @@ class CPoint
 	//warum wird CLine erkannt?
 	friend class CLine;
 	friend class CRectangle;
+	friend class CCircle;
 
 private:
 	float x, y;
@@ -19,6 +20,8 @@ public:
 	CPoint();
 	CPoint(float x, float y);
 	CPoint(const CPoint& point);
+	CPoint operator+(CPoint point);
+	CPoint operator-(CPoint point);
 	~CPoint();
 
 	void set(float x, float y);

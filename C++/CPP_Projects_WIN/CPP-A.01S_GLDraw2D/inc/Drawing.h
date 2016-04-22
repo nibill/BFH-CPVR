@@ -15,6 +15,7 @@ version: 1.01
 // system includes ////////////////////////////////////////////////////////////
 #include <string>
 #include <vector>
+#include "../inc/CPoint.h"
 using namespace std;
 
 
