@@ -42059,7 +42059,8 @@ scene.add(new THREE.AmbientLight(0x111111));
 
 var spotLight = new THREE.SpotLight(0xffffff, 6, 40, Math.PI / 10);
 //spotLight.target.position.set(.5, .5, .5);
-spotLight.position.set(20, 5, 20);
+//spotLight.position.set(20,  5, 20);
+spotLight.position.set(0, 10, 20);
 spotLight.castShadow = true;
 scene.add(spotLight);
 

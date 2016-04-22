@@ -1,5 +1,0 @@
-﻿Draw.obj : error LNK2019: unresolved external symbol "public: __cdecl CPoint::CPoint(void)" (??0CPoint@@QEAA@XZ) referenced in function main
-Draw.obj : error LNK2019: unresolved external symbol "public: __cdecl CLine::CLine(void)" (??0CLine@@QEAA@XZ) referenced in function main
-Draw.obj : error LNK2019: unresolved external symbol "public: __cdecl CRect::CRect(void)" (??0CRect@@QEAA@XZ) referenced in function main
-Draw.obj : error LNK2019: unresolved external symbol "public: __cdecl CCircle::CCircle(void)" (??0CCircle@@QEAA@XZ) referenced in function main
-C:\Users\buche\Documents\BFH-CPVR\C++\CPP_Projects_WIN\CPP-A.01S_GLDraw2D\bin\Debug\CPP-A.01S_GLDraw2D.exe : fatal error LNK1120: 4 unresolved externals
