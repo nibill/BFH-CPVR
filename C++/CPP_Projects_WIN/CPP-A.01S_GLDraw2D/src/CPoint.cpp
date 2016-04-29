@@ -49,15 +49,15 @@ CPoint::~CPoint()
 	ulCount--;
 }
 
-void CPoint::set(float x, float y)
+void CPoint::set(float X, float Y)
 {
-	x = x;
-	y = y;
+	x = X;
+	y = Y;
 }
 
 string CPoint::list()
 {
-	return "x: " + to_string(x) + " y: " + to_string(y);
+	return "Point -> x: " + to_string(x) + " y: " + to_string(y);
 }
 
 void CPoint::draw(void)

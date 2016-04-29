@@ -84,9 +84,9 @@ void CRectangle::set(float x1, float y1, float x2, float y2)
 	bRight = CPoint(x2, y2);
 }
 
-int CRectangle::list()
+string CRectangle::list()
 {
-	return ulCount;
+	return "Rectangle -> TL: " + tLeft.list() + " br: " + bRight.list();
 }
 
 void CRectangle::draw()

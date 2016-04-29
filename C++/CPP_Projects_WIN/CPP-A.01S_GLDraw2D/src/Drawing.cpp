@@ -1,8 +1,8 @@
 /*/////////////////////////////////////////////////////////////////////////////
 module:  declaration of drawing class
 purpose: this class provides the interface to manage the geometric figures
-         of a drawing. This includes functions to display, append, remove
-         and the functionality to save/load figures from a file.
+		 of a drawing. This includes functions to display, append, remove
+		 and the functionality to save/load figures from a file.
 
 written: U.Kuenzler
 version: 1.01
@@ -13,9 +13,9 @@ history: 1.00 - initial version of OpenGL drawing application
 
 // system includes ////////////////////////////////////////////////////////////
 #include <iostream>
+#include <ctime>
+#include <vector>
 using namespace std;
-
-
 
 // application includes ///////////////////////////////////////////////////////
 #include "../../_COMMON/inc/UtilFLTK.h"
@@ -28,54 +28,81 @@ using namespace std;
 // static data definitions ////////////////////////////////////////////////////
 
 
-
 ///////////////////////////////////////////////////////////////////////////////
 // function: displayDrawing()
 // purpose:  This function is called, if the GLUT window handler decides to
 //           draw or redraw the window. This happens for instance if the user
 //           draws a new figure or resizes or min/maximizes the window.
 ///////////////////////////////////////////////////////////////////////////////
-void CDrawing::displayDrawing( EViewMode mode )
+void CDrawing::displayDrawing(EViewMode mode)
 ///////////////////////////////////////////////////////////////////////////////
 {
-	// TODO: insert code to draw and list figures
+	int height = 768;
+	int width = 1024;
+	const int arrSize = 40;
+	srand((unsigned)time(NULL));
+	CPoint pointArr[arrSize];
+	CPoint *pointArray = new CPoint[arrSize];
 
-		CLine l1(100, 100, 225, 200);
-		CLine l2(105, 123, 140, 250);
-		CLine l4;
-		l4 = l1 + l2;
+	vector<CPoint*> vecPoint;
+	vector<CLine*> vecLine;
+	vector<CRectangle*> vecRectangle;
+	vector<CCircle*> vecCircle;
 
-		l1.draw();
-		l2.draw();
-		l4.draw();
-
-		CCircle c1(300, 200, 50);
-		CCircle c2(350, 200, 35);
-		CCircle c3;
-		c3 = c1 + c2;
-
-		c1.draw();
-		c2.draw();	
-		c3.draw();
-
-		CRectangle r1(CPoint(30, 40), CPoint(70, 10));
-		CRectangle r2(CPoint(60, 60), CPoint(110, 30));		
-		CRectangle r3;
-		r3 = r1 + r2;
-
-		r1.draw();
-		r2.draw();
-		r3.draw();
-			
-	// check for viewing mode
-	if ( mode == VIEW_DRAWING )
+	for (int i = 0; i < arrSize; i++)
 	{
-		// TODO: add code here to draw objects
+		pointArr[i].set((float)(rand() % width), (float)(rand() % height));
+		pointArray[i].set((float)(rand() % width), (float)(rand() % height));
+		vecPoint.push_back(new CPoint((float)(rand() % width), (float)(rand() % height)));
+
+		vecLine.push_back(new CLine(
+			CPoint((float)(rand() % width), (float)(rand() % height)), 
+			CPoint((float)(rand() % width), (float)(rand() % height))));
+
+		vecRectangle.push_back(new CRectangle(
+			CPoint((float)(rand() % width), (float)(rand() % height)), 
+			CPoint((float)(rand() % width), (float)(rand() % height))));
+
+		vecCircle.push_back(new CCircle(CPoint((float)(rand() % width), (float)(rand() % height)), 
+			(float)(rand() % 100)));
+
+	}
+
+	// check for viewing mode
+	if (mode == VIEW_DRAWING)
+	{
+		for (int i = 0; i < arrSize; i++)
+		{
+			pointArr[i].draw();
+			pointArray[i].draw();
+		}
+
+		for (unsigned int i = 0; i < arrSize; i++)
+		{
+			vecPoint[i]->draw();
+			vecLine[i]->draw();
+			vecRectangle[i]->draw();
+			vecCircle[i]->draw();
+		}
 	}
 	else // VIEW_LISTING
 	{
-		// TODO: add code here to list objects
+		for (int i = 0; i < arrSize; i++)
+		{
+			cout << pointArr[i].list() << endl;
+			cout << pointArray[i].list() << endl;
+		}
+
+		for (unsigned int i = 0; i < arrSize; i++)
+		{
+			cout << vecPoint[i]->list() << endl;
+			cout << vecLine[i]->list() << endl;
+			cout << vecRectangle[i]->list() << endl;
+			cout << vecCircle[i]->list() << endl;
+		}
 	}
+
+	delete[] pointArray;
 }
 // CDrawing::displayDrawing() /////////////////////////////////////////////////
 
@@ -87,7 +114,7 @@ void CDrawing::displayDrawing( EViewMode mode )
 //           if the user clears the window or opens an existing drawing from
 //           a file.
 ///////////////////////////////////////////////////////////////////////////////
-void CDrawing::clearDrawing( void )
+void CDrawing::clearDrawing(void)
 ///////////////////////////////////////////////////////////////////////////////
 {
 	// TODO: insert code to clear drawing data
@@ -117,7 +144,7 @@ void CDrawing::appendFigure(EFigType figtype, const CPoint& p1, const CPoint& p2
 // purpose:  This function is called, to remove temporary figures while the
 //           user is interactively drawing lines, rectangles or circles.
 ///////////////////////////////////////////////////////////////////////////////
-void CDrawing::removeFigure( void )
+void CDrawing::removeFigure(void)
 ///////////////////////////////////////////////////////////////////////////////
 {
 	// TODO: add code to remove figure from list

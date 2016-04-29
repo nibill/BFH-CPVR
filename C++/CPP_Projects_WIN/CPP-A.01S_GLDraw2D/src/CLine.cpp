@@ -83,7 +83,7 @@ void CLine::set(float x1, float y1, float x2, float y2)
 
 string CLine::list()
 {
-	return "p1 (" + p1.list() + "), p2 (" + p2.list() + ")";
+	return "Line -> p1 (" + p1.list() + "), p2 (" + p2.list() + ")";
 }
 
 void CLine::draw(void)

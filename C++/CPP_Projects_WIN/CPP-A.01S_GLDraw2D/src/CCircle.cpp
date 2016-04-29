@@ -98,7 +98,7 @@ void CCircle::set(float x, float y, float r)
 
 string CCircle::list()
 {
-	return "center: " + cent.list() + " Radius: " + to_string(rad);
+	return "Circle -> center: " + cent.list() + " Radius: " + to_string(rad);
 }
 
 void CCircle::draw()

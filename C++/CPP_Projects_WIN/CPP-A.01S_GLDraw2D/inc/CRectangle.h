@@ -23,7 +23,7 @@ public:
 
 	void set(CPoint tLeft, CPoint bRight);
 	void set(float x1, float y1, float x2, float y2);
-	int list();
+	string list();
 	void draw();
 	static unsigned long listCount();
 };
