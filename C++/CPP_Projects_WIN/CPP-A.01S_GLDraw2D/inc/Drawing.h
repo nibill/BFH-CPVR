@@ -31,7 +31,11 @@ public: // types
 	enum EViewMode { VIEW_DRAWING, VIEW_LISTING };
 	enum EFigType { FIG_POINT=0x00, FIG_LINE=0x10, FIG_RECT=0x20, FIG_CIRCLE=0x30 };
 
-public: // functions 
+	static int WIDTH, HEIGTH;
+
+public:
+	// functions 
+	static void windowSize(int width, int heigth);
 	static void displayDrawing( EViewMode mode =  VIEW_DRAWING );
 	static void clearDrawing( void );
 	static void appendFigure( EFigType figtype, const CPoint& p1, const CPoint& p2 );

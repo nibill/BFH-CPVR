@@ -26,7 +26,14 @@ using namespace std;
 #include "../inc/CCircle.h"
 
 // static data definitions ////////////////////////////////////////////////////
+int CDrawing::HEIGTH = 600;
+int CDrawing::WIDTH = 800;
 
+void CDrawing::windowSize(int width, int heigth)
+{
+	CDrawing::WIDTH = width;
+	CDrawing::HEIGTH = heigth;
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 // function: displayDrawing()
@@ -37,8 +44,6 @@ using namespace std;
 void CDrawing::displayDrawing(EViewMode mode)
 ///////////////////////////////////////////////////////////////////////////////
 {
-	int height = 768;
-	int width = 1024;
 	const int arrSize = 40;
 	srand((unsigned)time(NULL));
 	CPoint pointArr[arrSize];
@@ -51,20 +56,19 @@ void CDrawing::displayDrawing(EViewMode mode)
 
 	for (int i = 0; i < arrSize; i++)
 	{
-		pointArr[i].set((float)(rand() % width), (float)(rand() % height));
-		pointArray[i].set((float)(rand() % width), (float)(rand() % height));
-		vecPoint.push_back(new CPoint((float)(rand() % width), (float)(rand() % height)));
+		pointArr[i].set((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH));
+		pointArray[i].set((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH));
+		vecPoint.push_back(new CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH)));
 
 		vecLine.push_back(new CLine(
-			CPoint((float)(rand() % width), (float)(rand() % height)), 
-			CPoint((float)(rand() % width), (float)(rand() % height))));
+			CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH)),
+			CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH))));
 
 		vecRectangle.push_back(new CRectangle(
-			CPoint((float)(rand() % width), (float)(rand() % height)), 
-			CPoint((float)(rand() % width), (float)(rand() % height))));
+			CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH)),
+			CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH))));
 
-		vecCircle.push_back(new CCircle(CPoint((float)(rand() % width), (float)(rand() % height)), 
-			(float)(rand() % 100)));
+		vecCircle.push_back(new CCircle(CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH)), (float)(rand() % 100)));
 
 	}
 
@@ -99,10 +103,32 @@ void CDrawing::displayDrawing(EViewMode mode)
 			cout << vecLine[i]->list() << endl;
 			cout << vecRectangle[i]->list() << endl;
 			cout << vecCircle[i]->list() << endl;
+			cout << " " << endl;
 		}
 	}
 
+	// dynamische Objekte löschen
 	delete[] pointArray;
+
+	// Objekte in den Vektoren löschen -> ruft den Destruktor auf
+	for (unsigned int i = 0; i < arrSize; i++)
+	{
+		delete vecPoint[i];
+		delete vecLine[i];
+		delete vecRectangle[i];
+		delete vecCircle[i];
+	}
+
+	vecPoint.clear();
+	vecLine.clear();
+	vecRectangle.clear();
+	vecCircle.clear();
+
+	CPoint::listCount();
+	CLine::listCount();
+	CRectangle::listCount();
+	CCircle::listCount();
+	cout << endl;
 }
 // CDrawing::displayDrawing() /////////////////////////////////////////////////
 
