@@ -94,7 +94,6 @@ void CRectangle::draw()
 	glRectf(tLeft.x, tLeft.y, bRight.x, bRight.y);
 }
 
-
 unsigned long CRectangle::listCount()
 {
 	return ulCount;
