@@ -3,11 +3,12 @@
 
 #include <string>
 
+#include "Figure.h"
+
 using namespace std;
 
-class CPoint
+class CPoint : public CFigure
 {
-	//warum wird CLine erkannt?
 	friend class CLine;
 	friend class CRectangle;
 	friend class CCircle;

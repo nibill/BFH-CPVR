@@ -12,9 +12,10 @@ history: 1.00 - initial version of OpenGL drawing application
 
 
 // system includes ////////////////////////////////////////////////////////////
-#include <iostream>
 #include <ctime>
+#include <cstdlib>
 #include <vector>
+#include <iostream>
 using namespace std;
 
 // application includes ///////////////////////////////////////////////////////
@@ -26,6 +27,8 @@ using namespace std;
 #include "../inc/CCircle.h"
 
 // static data definitions ////////////////////////////////////////////////////
+vector<CFigure*> CDrawing::_FigVector;
+
 int CDrawing::HEIGTH = 600;
 int CDrawing::WIDTH = 800;
 
@@ -44,85 +47,95 @@ void CDrawing::windowSize(int width, int heigth)
 void CDrawing::displayDrawing(EViewMode mode)
 ///////////////////////////////////////////////////////////////////////////////
 {
-	const int arrSize = 40;
-	srand((unsigned)time(NULL));
-	CPoint pointArr[arrSize];
-	CPoint *pointArray = new CPoint[arrSize];
+	//const int arrSize = 40;
+	//srand((unsigned)time(NULL));
+	//CPoint pointArr[arrSize];
+	//CPoint *pointArray = new CPoint[arrSize];
 
-	vector<CPoint*> vecPoint;
-	vector<CLine*> vecLine;
-	vector<CRectangle*> vecRectangle;
-	vector<CCircle*> vecCircle;
+	//vector<CPoint*> vecPoint;
+	//vector<CLine*> vecLine;
+	//vector<CRectangle*> vecRectangle;
+	//vector<CCircle*> vecCircle;
 
-	for (int i = 0; i < arrSize; i++)
-	{
-		pointArr[i].set((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH));
-		pointArray[i].set((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH));
-		vecPoint.push_back(new CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH)));
+	//for (int i = 0; i < arrSize; i++)
+	//{
+	//	pointArr[i].set((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH));
+	//	pointArray[i].set((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH));
+	//	vecPoint.push_back(new CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH)));
 
-		vecLine.push_back(new CLine(
-			CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH)),
-			CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH))));
+	//	vecLine.push_back(new CLine(
+	//		CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH)),
+	//		CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH))));
 
-		vecRectangle.push_back(new CRectangle(
-			CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH)),
-			CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH))));
+	//	vecRectangle.push_back(new CRectangle(
+	//		CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH)),
+	//		CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH))));
 
-		vecCircle.push_back(new CCircle(CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH)), (float)(rand() % 100)));
+	//	vecCircle.push_back(new CCircle(CPoint((float)(rand() % CDrawing::WIDTH), (float)(rand() % CDrawing::HEIGTH)), (float)(rand() % 100)));
 
-	}
+	//}
 
 	// check for viewing mode
 	if (mode == VIEW_DRAWING)
 	{
-		for (int i = 0; i < arrSize; i++)
-		{
-			pointArr[i].draw();
-			pointArray[i].draw();
-		}
+		//for (int i = 0; i < arrSize; i++)
+		//{
+		//	pointArr[i].draw();
+		//	pointArray[i].draw();
+		//}
 
-		for (unsigned int i = 0; i < arrSize; i++)
+		//for (unsigned int i = 0; i < arrSize; i++)
+		//{
+		//	vecPoint[i]->draw();
+		//	vecLine[i]->draw();
+		//	vecRectangle[i]->draw();
+		//	vecCircle[i]->draw();
+		//}
+
+		for (vector<CFigure*>::iterator pos = _FigVector.begin(); pos != _FigVector.end(); ++pos)
 		{
-			vecPoint[i]->draw();
-			vecLine[i]->draw();
-			vecRectangle[i]->draw();
-			vecCircle[i]->draw();
+			(*pos)->draw();
 		}
 	}
 	else // VIEW_LISTING
 	{
-		for (int i = 0; i < arrSize; i++)
-		{
-			cout << pointArr[i].list() << endl;
-			cout << pointArray[i].list() << endl;
-		}
+		//for (int i = 0; i < arrSize; i++)
+		//{
+		//	cout << pointArr[i].list() << endl;
+		//	cout << pointArray[i].list() << endl;
+		//}
 
-		for (unsigned int i = 0; i < arrSize; i++)
+		//for (unsigned int i = 0; i < arrSize; i++)
+		//{
+		//	cout << vecPoint[i]->list() << endl;
+		//	cout << vecLine[i]->list() << endl;
+		//	cout << vecRectangle[i]->list() << endl;
+		//	cout << vecCircle[i]->list() << endl;
+		//	cout << " " << endl;
+		//}
+
+		for (vector<CFigure*>::iterator pos = _FigVector.begin(); pos != _FigVector.end(); ++pos)
 		{
-			cout << vecPoint[i]->list() << endl;
-			cout << vecLine[i]->list() << endl;
-			cout << vecRectangle[i]->list() << endl;
-			cout << vecCircle[i]->list() << endl;
-			cout << " " << endl;
+			cout << (*pos)->list();
 		}
 	}
 
-	// dynamische Objekte löschen
-	delete[] pointArray;
+	//// dynamische Objekte löschen
+	//delete[] pointArray;
 
-	// Objekte in den Vektoren löschen -> ruft den Destruktor auf
-	for (unsigned int i = 0; i < arrSize; i++)
-	{
-		delete vecPoint[i];
-		delete vecLine[i];
-		delete vecRectangle[i];
-		delete vecCircle[i];
-	}
+	//// Objekte in den Vektoren löschen -> ruft den Destruktor auf
+	//for (unsigned int i = 0; i < arrSize; i++)
+	//{
+	//	delete vecPoint[i];
+	//	delete vecLine[i];
+	//	delete vecRectangle[i];
+	//	delete vecCircle[i];
+	//}
 
-	vecPoint.clear();
-	vecLine.clear();
-	vecRectangle.clear();
-	vecCircle.clear();
+	//vecPoint.clear();
+	//vecLine.clear();
+	//vecRectangle.clear();
+	//vecCircle.clear();
 
 	CPoint::listCount();
 	CLine::listCount();
@@ -143,7 +156,13 @@ void CDrawing::displayDrawing(EViewMode mode)
 void CDrawing::clearDrawing(void)
 ///////////////////////////////////////////////////////////////////////////////
 {
-	// TODO: insert code to clear drawing data
+	for (vector<CFigure*>::iterator pos = _FigVector.begin(); pos != _FigVector.begin(); ++pos)
+	{
+		delete *pos;
+
+		// Figure Pointers aus Liste löschen
+		_FigVector.clear();
+	}
 }
 // CDrawing::clearDrawing() ///////////////////////////////////////////////////
 
@@ -159,7 +178,25 @@ void CDrawing::clearDrawing(void)
 void CDrawing::appendFigure(EFigType figtype, const CPoint& p1, const CPoint& p2)
 ///////////////////////////////////////////////////////////////////////////////
 {
-	// TODO: add code to append figure to list
+	CFigure *pNewFig = 0;
+
+	switch (figtype)
+	{
+	case FIG_POINT:
+		pNewFig = new CPoint(p1);
+		break;
+	case FIG_LINE:
+		pNewFig = new CLine(p1, p2);
+		break;
+	case FIG_RECT:
+		pNewFig = new CRectangle(p1, p2);
+		break;
+	case FIG_CIRCLE:
+		pNewFig = new CCircle(p1, p2);
+		break;
+	}
+
+	_FigVector.push_back(pNewFig);
 }
 // CDrawing::appendFigure() ///////////////////////////////////////////////////
 
@@ -173,7 +210,14 @@ void CDrawing::appendFigure(EFigType figtype, const CPoint& p1, const CPoint& p2
 void CDrawing::removeFigure(void)
 ///////////////////////////////////////////////////////////////////////////////
 {
-	// TODO: add code to remove figure from list
+	if (!_FigVector.empty())
+	{
+		// Figur Objekt löschen
+		delete _FigVector.back();
+
+		// Pointer aus Liste löschen
+		_FigVector.pop_back();
+	}
 }
 // CDrawing::removeFigure() ///////////////////////////////////////////////////
 

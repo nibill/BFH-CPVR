@@ -27,6 +27,9 @@ using namespace std;
 class CDrawing
 ///////////////////////////////////////////////////////////////////////////////
 {
+private:
+	static vector<CFigure*> _FigVector;
+
 public: // types
 	enum EViewMode { VIEW_DRAWING, VIEW_LISTING };
 	enum EFigType { FIG_POINT=0x00, FIG_LINE=0x10, FIG_RECT=0x20, FIG_CIRCLE=0x30 };

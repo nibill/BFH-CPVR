@@ -3,7 +3,9 @@
 
 #include "CPoint.h"
 
-class CLine
+#include "Figure.h"
+
+class CLine : public CFigure
 {
 private:
 	CPoint p1;

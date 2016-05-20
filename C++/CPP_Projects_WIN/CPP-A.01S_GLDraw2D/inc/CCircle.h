@@ -3,7 +3,9 @@
 
 #include "CPoint.h"
 
-class CCircle
+#include "Figure.h"
+
+class CCircle : public CFigure
 {
 private:
 	CPoint cent;
@@ -13,6 +15,7 @@ private:
 public:
 	CCircle();
 	CCircle(CPoint cent, float rad);
+	CCircle(CPoint p1, CPoint p2);
 	CCircle(float x, float y, float r);
 	CCircle(const CCircle& circle);
 	CCircle operator+(CCircle circ);

@@ -1,5 +1,5 @@
-#ifndef _FIGURE_H_
-#define _FIGURE_H_
+#ifndef FIGURE_H
+#define FIGURE_H
 
 #include <iostream>
 #include <string>
@@ -10,9 +10,9 @@ class CFigure
 {
 public:
 	virtual void draw(void) = 0;
-	virtual void list(void) = 0;
-
-	virtual ~CFigure() = 0;
+	virtual string list() = 0;
+	
+	virtual ~CFigure();
 };
 
 inline CFigure::~CFigure() {};

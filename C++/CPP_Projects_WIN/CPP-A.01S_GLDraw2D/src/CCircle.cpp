@@ -11,7 +11,6 @@
 
 using namespace std;
 
-using namespace std;
 unsigned long CCircle::ulCount = 0;
 
 CCircle::CCircle() :
@@ -25,6 +24,15 @@ CCircle::CCircle(CPoint center, float radius) :
 cent(center),
 rad(radius)
 {
+	ulCount++;
+}
+
+CCircle::CCircle(CPoint p1, CPoint p2)
+{
+	_Radius = sqrtf((float)(-ptP1.x + ptP2.x)*(-ptP1.x + ptP2.x) +
+		(-ptP1.y + ptP2.y)*(-ptP1.y + ptP2.y));
+	_P1 = ptP1;
+
 	ulCount++;
 }
 
