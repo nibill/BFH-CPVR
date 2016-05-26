@@ -26,6 +26,8 @@ public:
 	void set(float x, float y, float r);
 	string list();
 	void draw();
+	virtual void laod(std::iostream*) override;
+	virtual void save(std::ostream*) override;
 	static int listCount();
 };
 #endif //CCIRCLE_H

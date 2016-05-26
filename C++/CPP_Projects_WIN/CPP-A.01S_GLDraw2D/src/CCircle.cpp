@@ -29,9 +29,9 @@ rad(radius)
 
 CCircle::CCircle(CPoint p1, CPoint p2)
 {
-	_Radius = sqrtf((float)(-ptP1.x + ptP2.x)*(-ptP1.x + ptP2.x) +
-		(-ptP1.y + ptP2.y)*(-ptP1.y + ptP2.y));
-	_P1 = ptP1;
+	rad = sqrtf((float)(-p1.x + p2.x)*(-p1.x + p2.x) +
+		(-p1.y + p2.y)*(-p1.y + p2.y));
+	cent = p1;
 
 	ulCount++;
 }
