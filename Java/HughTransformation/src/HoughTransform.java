@@ -1,3 +1,7 @@
+import java.io.LineNumberInputStream;
+
+import org.omg.CORBA.portable.ValueFactory;
+
 import ij.ImagePlus;
 import ij.gui.NewImage;
 import ij.plugin.PNG_Writer;
@@ -9,6 +13,9 @@ public class HoughTransform implements PlugInFilter
     @Override
     public int setup(String arg, ImagePlus imp) {return DOES_8G;}
 
+    /* (non-Javadoc)
+     * @see ij.plugin.filter.PlugInFilter#run(ij.process.ImageProcessor)
+     */
     @Override
     public void run(ImageProcessor ip)
     {   
@@ -63,24 +70,55 @@ public class HoughTransform implements PlugInFilter
         long msSpace = System.currentTimeMillis();
         
         // Build non maximum supression with radius nonMaxR into hough2
-        for(int ang = 0; ang < nAng; ang ++)
+        //for(int ang = 0; ang < nAng; ang ++)
+        //{
+        	//for(int rad = 0; rad < nRad; rad ++)
+        	//{
+        		//int maxValue = 0;
+        		//if(ang > 0)
+        	//	{
+        			//max = 
+        	//	}
+        	//}
+        //}
+        for(int x = 0; x < hough1.length; x++)
         {
-        	for(int rad = 0; rad < nRad; rad ++)
+        	for(int y = 0; y < hough1[x].length; y++)
         	{
-        		int maxValue = 0;
-        		if(ang > 0)
-        		{
-        			max = 
-        		}
+        		hough2[x][y] = valueFor(x, y, hough1, nonMaxR);
+        	}
+        }      
+        
+        // Build histogram of the array hough2
+        int[] histogram = new int[maxAccum + 1];
+        for(int[] hough2lines : hough2)
+        {
+        	for(int hough2cells : hough2lines)
+        	{
+        		histogram[hough2cells]++;
         	}
         }
         
-        
-        // Build histogram of the array hough2
-        // ???
-        
         // Get n strongest lines into arrays lineAng & lineRad
-        
+        int linesFound = 0;
+        for(int i = maxAccum; linesFound < nLines && i >= 0; i--)
+        {
+        	if(histogram[i] > 0)
+        	{
+        		for(int x = 0; x < hough2.length; x++)
+        		{
+        			for(int y = 0; y < hough2[x].length; y++)
+        			{
+        				if(hough2[x][y] == i)
+        				{
+        					lineAng[linesFound] = (int)(x*dAng);
+        					lineRad[linesFound] = (int) (y*dRad);
+        					linesFound ++ ;
+        				}
+        			}
+        		}
+        	}
+        }
         
         long msLines = System.currentTimeMillis();
         
@@ -115,4 +153,32 @@ public class HoughTransform implements PlugInFilter
         plugin.setup("", im);
         plugin.run(im.getProcessor());
     }
+    
+    private int valueFor(int x, int y, int[][] hough, int gridRadius)
+    {
+    	int max = hough[x][y];
+    	for(int dX = minValue(x,gridRadius); dX <= maxValue(x, hough.length, gridRadius); dX ++)
+    	{
+    		for(int dY = minValue(y, gridRadius); dY <= maxValue(x, hough.length, gridRadius); dY++)
+    		{
+    			int val = hough[dX][dY];
+    			if(val > max)
+    			{
+    				return 0;
+    			}
+    		}
+    	}
+    	return max;
+    }
+    
+    private int maxValue(int value, int length, int gridRadius)
+    {
+    	return value + gridRadius < length ? value + gridRadius : length  - 1;
+    }
+    
+    private int minValue(int value, int gridRadius)
+    {
+    	return value - gridRadius >= 0 ? value - gridRadius : 0;
+    }
+  
 }
