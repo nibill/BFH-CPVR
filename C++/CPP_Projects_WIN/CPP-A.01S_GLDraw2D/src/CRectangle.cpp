@@ -94,6 +94,25 @@ void CRectangle::draw()
 	glRectf(tLeft.x, tLeft.y, bRight.x, bRight.y);
 }
 
+void CRectangle::load(istream* stream) {
+	string x1, y1, x2, y2;
+	getline(*stream, x1);
+	getline(*stream, y1);
+	getline(*stream, x2);
+	getline(*stream, y2);
+
+	set(stod(x1), stod(y1), stod(x2), stod(y2));
+}
+
+void CRectangle::save(std::ostream* stream) {
+	CDrawing::EFigType figType = CDrawing::FIG_RECT;
+	(*stream) << figType << endl;
+	(*stream) << tLeft.x << endl;
+	(*stream) << tLeft.y << endl;
+	(*stream) << bRight.x << endl;
+	(*stream) << bRight.y << endl;
+}
+
 unsigned long CRectangle::listCount()
 {
 	return ulCount;

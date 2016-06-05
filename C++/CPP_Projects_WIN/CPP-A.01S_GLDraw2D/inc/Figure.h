@@ -5,6 +5,7 @@
 #include <string>
 
 using namespace std;
+class CPoint;
 
 class CFigure
 {
@@ -13,12 +14,14 @@ private:
 public:
 	static void listCount();
 
-	virtual void draw(void) = 0;
-	virtual string list() = 0;
-	virtual void laod(std::iostream*) = 0;
-	virtual void save(std::ostream*) = 0;
-	
+	CFigure();
+	CFigure(const CFigure&);
 	virtual ~CFigure();
+
+	virtual string list(void) = 0;
+	virtual void draw(void) = 0;
+	virtual void load(std::istream*) = 0;
+	virtual void save(std::ostream*) = 0;
 };
 
 inline CFigure::~CFigure() {};

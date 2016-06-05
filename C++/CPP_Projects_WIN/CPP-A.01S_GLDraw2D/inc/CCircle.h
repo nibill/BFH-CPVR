@@ -26,7 +26,7 @@ public:
 	void set(float x, float y, float r);
 	string list();
 	void draw();
-	virtual void laod(std::iostream*) override;
+	virtual void load(std::istream*) override;
 	virtual void save(std::ostream*) override;
 	static int listCount();
 };

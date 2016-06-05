@@ -117,6 +117,22 @@ void CCircle::draw()
 	glPopMatrix();
 }
 
+void CCircle::load(istream* stream) {
+	string x, y, r;
+	getline(*stream, x);
+	getline(*stream, y);
+	getline(*stream, r);
+
+	set(stod(x), stod(y), stod(r));
+}
+
+void CCircle::save(std::ostream* stream) {
+	CDrawing::EFigType figType = CDrawing::FIG_CIRCLE;
+	(*stream) << figType << endl;
+	(*stream) << cent.x << endl;
+	(*stream) << cent.y << endl;
+	(*stream) << rad << endl;
+}
 
 int CCircle::listCount()
 {

@@ -98,3 +98,22 @@ int CLine::listCount()
 {
 	return ulCount;
 }
+
+void CLine::load(std::istream * stream)
+{
+	string x1, y1, x2, y2;
+	getline(*stream, x1);
+	getline(*stream, y1);
+	getline(*stream, x2);
+	getline(*stream, y2);
+}
+
+void CLine::save(std::ostream * stream)
+{
+	CDrawing::EFigType figType = CDrawing::FIG_LINE;
+	(*stream) << figType << endl;
+	(*stream) << p1.x << endl;
+	(*stream) << p1.y << endl;
+	(*stream) << p2.x << endl;
+	(*stream) << p2.y << endl;
+}

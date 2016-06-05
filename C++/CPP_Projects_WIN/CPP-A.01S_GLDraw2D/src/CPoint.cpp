@@ -39,7 +39,7 @@ CPoint CPoint::operator+(CPoint point)
 	return CPoint(x + point.x, y + point.y);
 }
 
-CPoint CPoint::operator-(CPoint point)
+CPoint CPoint::operator-(CPoint point) 
 {
 	return CPoint(x - point.x, y - point.y);
 }
@@ -74,6 +74,21 @@ void CPoint::draw(void)
 	glVertex2f(x, y - (crosslength + 1));
 	glVertex2f(x, y + crosslength);
 	glEnd();
+}
+
+void CPoint::load(std::istream * stream)
+{
+	string x, y;
+	getline(*stream, x);
+	getline(*stream, y);
+}
+
+void CPoint::save(std::ostream * stream)
+{
+	CDrawing::EFigType figType = CDrawing::FIG_POINT;
+	(*stream) << figType << endl;
+	(*stream) << x << endl;
+	(*stream) << y << endl;
 }
 
 int CPoint::listCount()

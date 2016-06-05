@@ -26,6 +26,8 @@ public:
 	string list();
 	void draw();
 	static int listCount();
+	void load(std::istream*) override;
+	void save(std::ostream*) override;
 };
 
 #endif // !CLINE_H

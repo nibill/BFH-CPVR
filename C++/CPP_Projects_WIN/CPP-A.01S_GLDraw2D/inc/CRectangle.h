@@ -28,6 +28,8 @@ public:
 	void set(float x1, float y1, float x2, float y2);
 	string list();
 	void draw();
+	void load(std::istream*) override;
+	void save(std::ostream*) override;
 	static unsigned long listCount();
 };
 
