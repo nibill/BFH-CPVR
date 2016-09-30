@@ -14,8 +14,8 @@ private:
 public:
 	static void listCount();
 
-	CFigure();
-	CFigure(const CFigure&);
+	//CFigure();
+	//CFigure(const CFigure&);
 	virtual ~CFigure();
 
 	virtual string list(void) = 0;

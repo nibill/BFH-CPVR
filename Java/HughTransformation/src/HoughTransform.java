@@ -70,17 +70,6 @@ public class HoughTransform implements PlugInFilter
         long msSpace = System.currentTimeMillis();
         
         // Build non maximum supression with radius nonMaxR into hough2
-        //for(int ang = 0; ang < nAng; ang ++)
-        //{
-        	//for(int rad = 0; rad < nRad; rad ++)
-        	//{
-        		//int maxValue = 0;
-        		//if(ang > 0)
-        	//	{
-        			//max = 
-        	//	}
-        	//}
-        //}
         for(int x = 0; x < hough1.length; x++)
         {
         	for(int y = 0; y < hough1[x].length; y++)

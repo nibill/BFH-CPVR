@@ -16,6 +16,7 @@ history: 1.00 - initial version of OpenGL drawing application
 #include <cstdlib>
 #include <vector>
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 // application includes ///////////////////////////////////////////////////////
@@ -28,6 +29,8 @@ using namespace std;
 
 // static data definitions ////////////////////////////////////////////////////
 vector<CFigure*> CDrawing::_FigVector;
+vector<CFigure*>::iterator pos;
+
 
 int CDrawing::HEIGTH = 600;
 int CDrawing::WIDTH = 800;
@@ -92,7 +95,7 @@ void CDrawing::displayDrawing(EViewMode mode)
 		//	vecCircle[i]->draw();
 		//}
 
-		for (vector<CFigure*>::iterator pos = _FigVector.begin(); pos != _FigVector.end(); ++pos)
+		for (pos = _FigVector.begin(); pos != _FigVector.end(); ++pos)
 		{
 			(*pos)->draw();
 		}
@@ -232,7 +235,39 @@ void CDrawing::removeFigure(void)
 void CDrawing::loadDrawingFile(const string& filename)
 ///////////////////////////////////////////////////////////////////////////////
 {
-	// TODO: add drawing file reading code here
+	clearDrawing();
+
+	ifstream ifs(filename);
+	string line;
+
+	while (getline(ifs, line))
+	{
+		if (line == ";") continue;
+
+		int code = stoi(line);
+
+		CFigure* fig = nullptr;
+		switch (code)
+		{
+		case FIG_POINT:
+			fig = new CPoint();
+			break;
+		case FIG_LINE:
+			fig = new CLine();
+			break;
+		case FIG_RECT:
+			fig = new CRectangle();
+			break;
+		case FIG_CIRCLE:
+			fig = new CCircle();
+			break;
+		default:
+			throw invalid_argument("Code not valid");
+		}
+
+		fig->load(&ifs);
+		_FigVector.push_back(fig);
+	}
 }
 // CDrawing::loadDrawingFile() ////////////////////////////////////////////////
 
@@ -247,6 +282,16 @@ void CDrawing::loadDrawingFile(const string& filename)
 void CDrawing::saveDrawingFile(const string& filename)
 ///////////////////////////////////////////////////////////////////////////////
 {
-	// TODO: add drawing file writing code here
+	streambuf* buff = cout.rdbuf();
+	ofstream ofs(filename);
+	cout.rdbuf(ofs.rdbuf());
+
+	for (pos = _FigVector.begin(); pos != _FigVector.end(); ++pos)
+	{
+		(*pos)->save(&cout);
+		cout << ";" << endl;
+	}
+
+	cout.rdbuf(buff);
 }
 // CDrawing::saveDrawingFile() ////////////////////////////////////////////////

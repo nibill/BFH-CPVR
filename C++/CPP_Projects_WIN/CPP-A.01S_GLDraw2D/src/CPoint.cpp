@@ -62,8 +62,6 @@ string CPoint::list()
 
 void CPoint::draw(void)
 {
-	// cout << "DEBUG: CPoint::draw() x=" << x << " y=" << y << endl;
-
 	// define the size of cross
 	static const float crosslength = 5;
 
