@@ -41,7 +41,19 @@ void glutDisplayCB(void)
 		glVertex3f( base, -base, 0.0f); // v1
 		glVertex3f(    0,  base, 0.0f); // v2
 	glEnd();
-	
+
+	glBegin(GL_TRIANGLES);
+	glVertex3f(base, -base, 0.0f); // v0
+	glVertex3f(3* base,  - base, 0.0f); // v1
+	glVertex3f(2* base, base, 0.0f); // v2
+	glEnd();
+
+	glBegin(GL_TRIANGLES);
+	glVertex3f(0, base, 0.0f); // v0
+	glVertex3f(2 * base, base, 0.0f); // v1
+	glVertex3f(base, 3* base, 0.0f); // v2
+	glEnd();
+
 	glutSwapBuffers();
 }
 
@@ -54,7 +66,7 @@ void initRendering()
 	glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
 	glPolygonMode(GL_FRONT, GL_FILL);
-	glPolygonMode(GL_BACK, GL_LINE);
+	glPolygonMode(GL_BACK, GL_FILL);
 
 	// setup orthographic projection matrix
 	glMatrixMode(GL_PROJECTION);
