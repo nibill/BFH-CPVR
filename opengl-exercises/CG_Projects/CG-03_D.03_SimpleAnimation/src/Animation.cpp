@@ -1,5 +1,5 @@
 ﻿///////////////////////////////////////////////////////////////////////////////////////////////////
-// Assignment: CG-03-A.01_3DHouse (Ver 2.1)                                                      //
+// Demo: CG-03-D.03 - Simple Animation (Ver 2.1)                                                 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -7,6 +7,7 @@
 // system includes ////////////////////////////////////////////////////////////////////////////////
 #include <iostream>
 #include <string>
+#include <stack>
 using namespace std;
 
 
@@ -20,11 +21,13 @@ using namespace std;
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include <glm/gtc/constants.hpp>
 
 
 // application helper includes ////////////////////////////////////////////////////////////////////
 #include "../../_COMMON/inc/TrackBall.h"
 #include "../../_COMMON/inc/UtilGLSL.h"
+#include "../inc/Sphere.h"
 
 
 // application global variables and constants /////////////////////////////////////////////////////
@@ -34,22 +37,36 @@ GLint MV_MAT4_LOCATION = 0;
 
 int MENU_ENTRY = 0;
 int MENU_VALUE = 0;
-string MENU_NAME;
+string MENU_ENTRY_STR[3];
 
-GLenum POLYGON_MODE = GL_FRONT;
-GLenum POLYGON_DRAW = GL_FILL;
+float MOVE_X = 0.0;
+bool ANIMATION_RUNNING = false;
+int SPEED = 100;
 
-const float WIDTH = 5.0f;		// ground = width * 2
-const float HEIGHT = 3.0f;		// height of roof
-const float HOUSE = WIDTH / 2; // house measures
+Sphere MySphere;
 
+
+
+void glutTimerCB(int timer_id)
+/////////////////////////////////////////////////////////////////////////////////////////
+{
+	static float alpha = 0.0;
+	alpha += 0.2f;
+	MOVE_X = 4 * sin(alpha);
+	//cout << "MOVE_X: " << MOVE_X << endl;
+
+	// reset timer if the animation is running
+	if (ANIMATION_RUNNING) glutTimerFunc(SPEED, glutTimerCB, 0);
+
+	glutPostRedisplay();
+}
 
 
 void glutDisplayCB(void)
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 {
 	// clear window background
-	glClear(GL_COLOR_BUFFER_BIT);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	// get trackball transformation matrix
 	glm::mat4 model(1.0f);
@@ -57,23 +74,11 @@ void glutDisplayCB(void)
 	model = model * view;
 
 	// set model view transformation matrix
+	model = glm::rotate(model, glm::radians<float>(90.0), glm::vec3(1.0f, 0.0f, 0.0f));
+	model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
+	model = glm::translate(model, glm::vec3(MOVE_X, 0.0f, 0.0f));
 	glUniformMatrix4fv(MV_MAT4_LOCATION, 1, GL_FALSE, glm::value_ptr(model));
-
-	// definition of ground face indices (for GL_TRIANGLES --> 6)
-	static GLushort ground_indices[] =
-	{
-		0, 3, 1, 
-		1, 0, 2
-	};
-
-	static GLushort house_indices[] =
-	{
-		0, 6, 1, 
-		0, 6
-	};
-
-	// dereferencing the vertices and draw the geometry using glDrawElements
-	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, &ground_indices[0]);
+	MySphere.draw();
 
 	glutSwapBuffers();
 	UtilGLSL::checkOpenGLErrorCode();
@@ -81,65 +86,13 @@ void glutDisplayCB(void)
 
 
 
-void initModel(float witdth, float heigth)
+void initModel(void)
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 {
-	// define ground vertices
-	GLfloat ground_vertices[] =
-	{
-		-witdth, -witdth, 0.0f, 1.0f,  // v0
-		 witdth, -witdth, 0.0f, 1.0f,  // v1
-		 witdth,  witdth, 0.0f, 1.0f,  // v2
-		-witdth,  witdth, 0.0f, 1.0f   // v3
-	};
-
-	GLfloat house_vertices[] =
-	{
-		-HOUSE, -HOUSE, 0.0f, 1.0f,
-		 HOUSE, -HOUSE, 0.0f, 1.0f,
-		 HOUSE,  HOUSE, 0.0f, 1.0f,
-		-HOUSE,  HOUSE, 0.0f, 1.0f,
-		-HOUSE, -HOUSE, HOUSE, 1.0f,
-		 HOUSE, -HOUSE, HOUSE, 1.0f,
-		 HOUSE,  HOUSE, HOUSE, 1.0f,
-		-HOUSE,  HOUSE, HOUSE, 1.0f,
-	};
-
-
-	// definition of the colors, each vertex has his own color definition (RGB)
-	GLfloat ground_colors[] =
-	{
-		0.0f, 0.4f, 0.0f,
-		0.0f, 0.4f, 0.0f,
-		0.0f, 0.4f, 0.0f,
-		0.0f, 0.4f, 0.0f
-	};
-
-
-	// setup and bind Vertex Array Object for plane
-	GLuint vao;
-	glGenVertexArrays(1, &vao);	
-	glBindVertexArray(vao);
-
-	// setup Vertex Buffer Object
-	GLuint vbo;
-	glGenBuffers(1, &vbo);
-	glBindBuffer(GL_ARRAY_BUFFER, vbo);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(ground_vertices) + sizeof(ground_colors), NULL, GL_STATIC_DRAW);
-	glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(ground_vertices), ground_vertices);
-	glBufferSubData(GL_ARRAY_BUFFER, sizeof(ground_vertices), sizeof(ground_colors), ground_colors);
-
-	// get vertex position attribute location and setup vertex attribute pointer
+	// get position vertex attribute location
 	// (requires that the shader program has been compiled already!)
 	GLuint vecPosition = glGetAttribLocation(PROGRAM_ID, "vecPosition");
-	glVertexAttribPointer(vecPosition, 4, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(0));
-	glEnableVertexAttribArray(vecPosition);
-	
-	// get vertex color attribute location and setup vertex attribute pointer
-	// (requires that the shader program has been compiled already!)
-	GLuint vecColor = glGetAttribLocation(PROGRAM_ID, "vecColor");
-	glVertexAttribPointer(vecColor, 3, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(sizeof(ground_vertices)));
-	glEnableVertexAttribArray(vecColor);
+	MySphere.init(vecPosition);
 }
 
 
@@ -148,12 +101,12 @@ void initRendering()
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 {
 	// set background color
-	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
-	glClear(GL_COLOR_BUFFER_BIT);
+	glClearColor(0.0, 0.0, 0.0, 0.0);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	glPolygonMode(POLYGON_MODE, GL_FILL);
-	glDisable(GL_CULL_FACE);
-	glDisable(GL_DEPTH_TEST);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	glEnable(GL_CULL_FACE);
+	glEnable(GL_DEPTH_TEST);
 
 	// get and setup orthographic projection matrix
 	glm::mat4 projection = glm::ortho(-10.0f, 10.0f, -10.0f, 10.0f, -10.0f, 10.0f);
@@ -165,17 +118,18 @@ void initRendering()
 }
 
 
-void initMenuChange(int entry, char* name, int value)
+
+void initMenuChange(int entry, char *name, int value)
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 {
 	MENU_ENTRY = entry;
 	MENU_VALUE = value;
-	MENU_NAME.assign(name);
+	if (entry > 0) MENU_ENTRY_STR[entry].assign(name);
 }
 
 
 
-void glutMenuCB1(int item)
+void glutMenuCB(int item)
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 {
 	switch (item)
@@ -187,63 +141,39 @@ void glutMenuCB1(int item)
 		}
 		case 1:
 		{
-			glPolygonMode(POLYGON_MODE, GL_LINE);
-			POLYGON_DRAW = GL_LINE;
-			initMenuChange(1, "Disable Wireframe", 2);
+			initMenuChange(1, "Stop Animation", 2);
+			ANIMATION_RUNNING = true;
+			glutTimerFunc(SPEED, glutTimerCB, 0);
 			break;
 		}
 		case 2:
 		{
-			glPolygonMode(POLYGON_MODE, GL_FILL);
-			POLYGON_DRAW = GL_FILL;
-			initMenuChange(1, "Enable Wireframe", 1);
+			initMenuChange(1, "Start Animation", 1);
+			ANIMATION_RUNNING = false;
 			break;
 		}
 		case 3:
 		{
-			initMenuChange(2, "Disable Culling", 4);
+			// increase animation speed
+			SPEED -= 1;
+			if (SPEED < 2) SPEED = 1;
+			cout << "ANIMATION_SPEED: " << SPEED << endl;
 			break;
 		}
 		case 4:
 		{
-			initMenuChange(2, "Enable Culling", 3);
-			break;
-		}
-		case 5:
-		{
-			initMenuChange(3, "Disable Depth Buffer", 6);
-			glutSetWindowTitle("3D House (Depth Buffering Enabled)");
-			break;
-		}
-		case 6:
-		{
-			initMenuChange(3, "Enable Depth Buffer", 5);
-			glutSetWindowTitle("3D House (Depth Buffering Disabled)");
+			// decrease animation speed
+			SPEED += 1;
+			cout << "ANIMATION_SPEED: " << SPEED << endl;
 			break;
 		}
 		default:
 		{
 			// reset settings
-			glPolygonMode(POLYGON_MODE, GL_FILL);
-			POLYGON_DRAW = GL_FILL;
-			glutSetWindowTitle("3D House");
-			glDisable(GL_CULL_FACE);
-			glDisable(GL_DEPTH_TEST);
-
-			initMenuChange(-1, "Reset Menu", -1);
 		}
 	}
+
 	glutPostRedisplay();
-}
-
-
-
-void glutMenuCB2(int item)
-///////////////////////////////////////////////////////////////////////////////////////////////////
-{
-    POLYGON_MODE = item;
-	glPolygonMode(POLYGON_MODE, POLYGON_DRAW);
-    glutPostRedisplay();
 }
 
 
@@ -251,22 +181,15 @@ void glutMenuCB2(int item)
 void initMenu()
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 {
-	int sub_menu;
-
-	/* create sub-menu */
-	sub_menu = glutCreateMenu(glutMenuCB2);
-	glutAddMenuEntry("GL_FRONT", GL_FRONT);
-	glutAddMenuEntry("GL_BACK", GL_BACK);
-	glutAddMenuEntry("GL_FRONT_AND_BACK", GL_FRONT_AND_BACK);
-
+	// work around for FLTK bug in glutChangeToMenuEntry() 
+	MENU_ENTRY_STR[0] = ""; // dummy entry since GLUT menus start at index 1
+	MENU_ENTRY_STR[1] = "Start Animation";
 
 	// create menu
-	glutCreateMenu(glutMenuCB1);
-	glutAddMenuEntry("Enable Wireframe", 1);
-	glutAddMenuEntry("Enable Culling", 3);
-	glutAddMenuEntry("Enable Depth Buffer", 5);
-	glutAddSubMenu("Set Polygon Face", sub_menu);
-	glutAddMenuEntry("Reset", 9);
+	glutCreateMenu(glutMenuCB);
+	glutAddMenuEntry(const_cast<char*>(MENU_ENTRY_STR[1].c_str()), 1);
+	glutAddMenuEntry("Increase Speed [Key 1]", 3);
+	glutAddMenuEntry("Decrease Speed [Key 2]", 4);
 	glutAddMenuEntry("Exit", 0);
 
 	// attach menu to right mouse button
@@ -289,10 +212,7 @@ void glutUpdateMenuCB(int status, int x, int y)
 		}
 		else
 		{
-			MENU_NAME.append(1, 0); // guarantee NUL termination
-			MENU_NAME.resize(1024);
-			glutChangeToMenuEntry(MENU_ENTRY, &MENU_NAME[0], MENU_VALUE);
-			MENU_NAME.resize(strlen(&MENU_NAME[0]));
+			glutChangeToMenuEntry(MENU_ENTRY, const_cast<char*>(MENU_ENTRY_STR[MENU_ENTRY].c_str()), MENU_VALUE);
 		}
 	}
 }
@@ -309,6 +229,28 @@ void glutKeyboardCB(unsigned char key, int x, int y)
 			exit(0);
 			break;
 		}
+		case ' ':
+		{
+			if (ANIMATION_RUNNING)
+			{
+				glutMenuCB(2);
+			}
+			else
+			{
+				glutMenuCB(1);
+			}
+			break;
+		}
+		case '1':
+		{
+			glutMenuCB(3);
+			break;
+		}
+		case '2':
+		{
+			glutMenuCB(4);
+			break;
+		}
 	}
 }
 
@@ -318,10 +260,10 @@ int main(int argc, char *argv[])
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 {
 	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | FL_OPENGL3);
+	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH | FL_OPENGL3);
 	glutInitWindowPosition(100, 100);
 	glutInitWindowSize(640, 640);
-	glutCreateWindow("3D House");
+	glutCreateWindow("Simple Animation");
 
 	// register extension wrapper library (GLEW)
 	glewExperimental = GL_TRUE;
@@ -364,16 +306,17 @@ int main(int argc, char *argv[])
 	{
 		argc = 3;
 		argv[0] = "";
-		argv[1] = "../../glsl/house.vert";
-		argv[2] = "../../glsl/house.frag";
+		argv[1] = "../../glsl/animation.vert";
+		argv[2] = "../../glsl/animation.frag";
 		PROGRAM_ID = UtilGLSL::initShaderProgram(argc, argv);
 	}
 
-	// init application 
+	// init application
 	initRendering();
-	initModel(WIDTH, HEIGHT);
- 	initMenu();
+	initModel();
+	initMenu();
 
+	// entering GLUT/FLTK main rendering loop
 	glutMainLoop();
 	return 0;  // only for compatibility purposes
 }
