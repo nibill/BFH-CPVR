@@ -68,12 +68,19 @@ void glutDisplayCB(void)
 
 	static GLushort house_indices[] =
 	{
-		0, 6, 1, 
-		0, 6
+		0, 1, 6, 
+		0, 6, 4,
+		1, 2, 6, 
+		1, 6, 5, 
+		2, 3, 7,
+		2, 7, 6,
+		3, 0, 4,
+		3, 4, 7
 	};
 
 	// dereferencing the vertices and draw the geometry using glDrawElements
 	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, &ground_indices[0]);
+	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, &house_indices[0]);
 
 	glutSwapBuffers();
 	UtilGLSL::checkOpenGLErrorCode();
@@ -99,12 +106,12 @@ void initModel(float witdth, float heigth)
 		 HOUSE, -HOUSE, 0.0f, 1.0f,
 		 HOUSE,  HOUSE, 0.0f, 1.0f,
 		-HOUSE,  HOUSE, 0.0f, 1.0f,
+
 		-HOUSE, -HOUSE, HOUSE, 1.0f,
 		 HOUSE, -HOUSE, HOUSE, 1.0f,
 		 HOUSE,  HOUSE, HOUSE, 1.0f,
 		-HOUSE,  HOUSE, HOUSE, 1.0f,
 	};
-
 
 	// definition of the colors, each vertex has his own color definition (RGB)
 	GLfloat ground_colors[] =
@@ -115,6 +122,18 @@ void initModel(float witdth, float heigth)
 		0.0f, 0.4f, 0.0f
 	};
 
+	GLfloat house_colors[] =
+	{
+		1.0f, 0.6f, 0.8f,
+		1.0f, 0.6f, 0.8f,
+		1.0f, 0.6f, 0.8f,
+		1.0f, 0.6f, 0.8f,
+		1.0f, 0.6f, 0.8f,
+		1.0f, 0.6f, 0.8f,
+		1.0f, 0.6f, 0.8f,
+		1.0f, 0.6f, 0.8f
+	};
+
 
 	// setup and bind Vertex Array Object for plane
 	GLuint vao;
@@ -123,11 +142,23 @@ void initModel(float witdth, float heigth)
 
 	// setup Vertex Buffer Object
 	GLuint vbo;
-	glGenBuffers(1, &vbo);
+	glGenBuffers(2, &vbo);
 	glBindBuffer(GL_ARRAY_BUFFER, vbo);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(ground_vertices) + sizeof(ground_colors), NULL, GL_STATIC_DRAW);
 	glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(ground_vertices), ground_vertices);
 	glBufferSubData(GL_ARRAY_BUFFER, sizeof(ground_vertices), sizeof(ground_colors), ground_colors);
+
+	glBufferData(GL_ARRAY_BUFFER, sizeof(house_vertices) + sizeof(house_colors), NULL, GL_STATIC_DRAW);
+	glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(house_vertices), house_vertices);
+	glBufferSubData(GL_ARRAY_BUFFER, sizeof(house_vertices), sizeof(house_colors), house_colors);
+
+	//GLuint vbo;
+	//glGenBuffers(1, &vbo);
+	//glBindBuffer(GL_ARRAY_BUFFER, vbo);
+	//glBufferData(GL_ARRAY_BUFFER, sizeof(house_vertices) + sizeof(house_colors), NULL, GL_STATIC_DRAW);
+	//glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(house_vertices), house_vertices);
+	//glBufferSubData(GL_ARRAY_BUFFER, sizeof(house_vertices), sizeof(house_colors), house_colors);
+
 
 	// get vertex position attribute location and setup vertex attribute pointer
 	// (requires that the shader program has been compiled already!)
@@ -139,6 +170,7 @@ void initModel(float witdth, float heigth)
 	// (requires that the shader program has been compiled already!)
 	GLuint vecColor = glGetAttribLocation(PROGRAM_ID, "vecColor");
 	glVertexAttribPointer(vecColor, 3, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(sizeof(ground_vertices)));
+	glVertexAttribPointer(vecColor, 3, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(sizeof(house_vertices)));
 	glEnableVertexAttribArray(vecColor);
 }
 
